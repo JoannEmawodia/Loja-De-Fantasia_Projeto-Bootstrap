@@ -24,6 +24,6 @@ body{
     background-image: url(./imagens/fundo/dot.jpg);
 }
 
-.fundo-diferente{
-    background-image: url(./imagens/fundo/dot.jpg);
+.fundo-roxo{
+    background-color: rgb(247, 238, 255);
 }
