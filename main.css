@@ -1,0 +1,29 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.focus-title{
+    font-family: "Caveat", cursive;
+}
+
+#cabecalho{
+    background-color: rgb(140, 138, 165);
+}
+
+#cabecalho h1,
+#cabecalho .nav-link{
+    color:#fff;
+}
+
+.carousel-item img {
+    height: 700px;
+    width: 100%;
+}
+
+.fundo-bolinha-roxa{
+    background-image: url(./imagens/fundo/dot.jpg);
+}
+
+.fundo-diferente{
+    background-image: url(./imagens/fundo/dot.jpg);
+}
