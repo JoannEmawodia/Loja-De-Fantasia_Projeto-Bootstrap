@@ -6,13 +6,18 @@ body{
     font-family: "Caveat", cursive;
 }
 
-#cabecalho{
-    background-color: rgb(140, 138, 165);
+hr{
+    background-color: black;
+    padding:3px;
 }
 
 #cabecalho h1,
 #cabecalho .nav-link{
     color:#fff;
+}
+
+#cabecalho{
+    background-color: rgb(187, 178, 195);
 }
 
 .carousel-item img {
@@ -26,4 +31,8 @@ body{
 
 .fundo-roxo{
     background-color: rgb(247, 238, 255);
+}
+
+#produtos img {
+    height: 250px;
 }
