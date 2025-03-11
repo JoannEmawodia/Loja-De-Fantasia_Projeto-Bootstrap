@@ -6,11 +6,6 @@ body{
     font-family: "Caveat", cursive;
 }
 
-hr{
-    background-color: black;
-    padding:3px;
-}
-
 #cabecalho h1,
 #cabecalho .nav-link{
     color:#fff;
