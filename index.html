@@ -21,7 +21,7 @@
                 <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                     <ul class="nav nav-pills d-block d-md-flex">
                         <li class= "nav-item">
-                            <a href="#sobre-a-loja" class="nav-link active">Sobre a loja</a>
+                            <a href="#sobre-a-loja" class="nav-link">Sobre a loja</a>
                         </li>
                         <li class= "nav-item">
                             <a href="#produtos" class="nav-link">Produtos</a>
@@ -33,214 +33,217 @@
                 </nav>
         </div>
     </header>
-    <div>
-        <section id="sobre-a-loja" class="fundo-bolinha-roxa">
-            <div id="carousel-loja" class="carousel carousel-fade slide" data-bs-ride="carousel" >
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="./imagens/slide/confeti.jpg" alt="Imagem de confetti">
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <div>
+            <section id="sobre-a-loja" class="fundo-bolinha-roxa">
+                <div id="carousel-loja" class="carousel carousel-fade slide" data-bs-ride="carousel" >
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="./imagens/slide/confeti.jpg" alt="Imagem de confetti">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./imagens/slide/mascara.jpg" alt="Imagem de abobora halloween">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./imagens/slide/mascaras.jpg" alt="Imagem de mascaras de carnaval">
+                        </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./imagens/slide/mascara.jpg" alt="Imagem de abobora halloween">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./imagens/slide/mascaras.jpg" alt="Imagem de mascaras de carnaval">
+                    <button data-bs-target="#carousel-loja" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-loja" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-loja" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-loja" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-loja" data-bs-slide-to="2"></button>                
                     </div>
                 </div>
-                <button data-bs-target="#carousel-loja" data-bs-slide="prev" class="carousel-control-prev" type="button">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button data-bs-target="#carousel-loja" data-bs-slide="next" class="carousel-control-next" type="button">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel-loja" class="active" data-bs-slide-to="0"></button>
-                    <button type="button" data-bs-target="#carousel-loja" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carousel-loja" data-bs-slide-to="2"></button>                
+                <div>
+                    <div class="container">
+                        <div class="row mt-5 pb-5">
+                            <div class="col-md-5">
+                                <img src="./imagens/fachada da loja.jpg" class="d-block w-100 rounded" alt="ilustração da entrada da loja">
+                            </div>
+                            <div class="col-md-7">
+                                <h2 class="focus-title fs-2">Sobre a loja de fantasia</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatibus cumque atque eveniet. Alias, at voluptatibus? Hic repudiandae cumque dolore numquam reprehenderit quisquam, tenetur, laborum debitis corrupti nostrum suscipit deleniti?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veritatis, consequatur architecto modi magnam ea excepturi laudantium quis alias hic amet aut autem quidem labore aliquid accusantium fuga harum quasi.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui enim architecto eius deserunt, cum error eaque magnam minima impedit quae ratione. Amet hic rem, aperiam quo cumque voluptatibus quos. Praesentium?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div>
+            </section>
+            <section id="produtos" class=" fundo-roxo pt-5 pb-5">
                 <div class="container">
-                    <div class="row mt-5 pb-5">
-                        <div class="col-md-5">
-                            <img src="./imagens/fachada da loja.jpg" class="d-block w-100 rounded" alt="ilustração da entrada da loja">
+                    <div class="row">
+                        <h2 class="focus-title text-center mb-3">Produtos</h2>
+                    </div>
+                    <div class="row">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pills flex-column nav-produtos">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#conteudo-carnaval" class="fw-bold text-start nav-link text-colored active">Carnaval</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#conteudo-halloween" class="fw-bold text-start nav-link text-colored">Halloween</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#conteudo-infantil" class="fw-bold text-start nav-link text-colored">Infantil</button>                            
+                            </nav>
+                        </aside>
+                        <div class="col-md-10">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="conteudo-carnaval">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./imagens/fantasia/carnaval.jpg" class="d-block w-100" alt="mulher com máscara">
+                                            <h5 class="mt-3">Máscaras</h5>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./imagens/fantasia/carnaval2.jpg" class="d-block w-100" alt="mulher vestida de havaiana">
+                                            <h5 class="mt-3">Individual</h5>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./imagens/fantasia/carnaval3.JPG" class="d-block w-100" alt="casal com roupa de presidiario">
+                                            <h5 class="mt-3">Grupo</h5>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="conteudo-halloween">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./imagens/fantasia/halloween.jpg" class="d-block w-100" alt="fantasia de ceifador">
+                                            <h5 class="mt-3">Ceifador</h5>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./imagens/fantasia/halloween3.jpg" class="d-block w-100" alt="fantasia de fantasma">
+                                            <h5 class="mt-3">Fantasma</h5>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./imagens/fantasia/halloween4.png" class="d-block w-100" alt="fantasia de bruxa">
+                                            <h5 class="mt-3">Bruxas</h5>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="conteudo-infantil">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./imagens/fantasia/criança fantasia.jpg" class="d-block w-100" alt="criança fantasiada">
+                                            <h5 class="mt-3">Criativas</h5>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./imagens/fantasia/heroi3.jpg" class="d-block w-100" alt="criança vestida de Goku">
+                                            <h5 class="mt-3">Anime</h5>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./imagens/fantasia/heroi5.jpg" class="d-block w-100" alt="criança vestida de capitão america">
+                                            <h5 class="mt-3">Heroi</h5>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contato" class="fundo-bolinha-roxa">
+                <div class="container pt-5 pb-5">
+                    <div class="row">
+                        <h2 class="focus-title text-center mb-3">Contato</h2>
+                    </div>
+                    <div class="row">
                         <div class="col-md-7">
-                            <h2 class="focus-title fs-2">Sobre a loja de fantasia</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatibus cumque atque eveniet. Alias, at voluptatibus? Hic repudiandae cumque dolore numquam reprehenderit quisquam, tenetur, laborum debitis corrupti nostrum suscipit deleniti?
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veritatis, consequatur architecto modi magnam ea excepturi laudantium quis alias hic amet aut autem quidem labore aliquid accusantium fuga harum quasi.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui enim architecto eius deserunt, cum error eaque magnam minima impedit quae ratione. Amet hic rem, aperiam quo cumque voluptatibus quos. Praesentium?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="produtos" class=" fundo-roxo pt-5 pb-5">
-            <div class="container">
-                <div class="row">
-                    <h2 class="focus-title text-center mb-3">Produtos</h2>
-                </div>
-                <div class="row">
-                    <aside class="col-md-2">
-                        <nav class="nav nav-pills flex-column nav-produtos">
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#conteudo-carnaval" class="fw-bold text-start nav-link text-colored active">Carnaval</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#conteudo-halloween" class="fw-bold text-start nav-link text-colored">Halloween</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#conteudo-infantil" class="fw-bold text-start nav-link text-colored">Infantil</button>                            
-                        </nav>
-                    </aside>
-                    <div class="col-md-10">
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="conteudo-carnaval">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="./imagens/fantasia/carnaval.jpg" class="d-block w-100" alt="mulher com máscara">
-                                        <h5 class="mt-3">Máscaras</h5>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="./imagens/fantasia/carnaval2.jpg" class="d-block w-100" alt="mulher vestida de havaiana">
-                                        <h5 class="mt-3">Individual</h5>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="./imagens/fantasia/carnaval3.JPG" class="d-block w-100" alt="casal com roupa de presidiario">
-                                        <h5 class="mt-3">Grupo</h5>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
+                            <form>
+                                <div class="mb-2">
+                                    <label class="form-label" for="nome"> Nome</label>
+                                    <input class="form-control" type="text" id="nome-contato" name="nome" required>
                                 </div>
-                            </div>
-                            <div class="tab-pane" id="conteudo-halloween">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="./imagens/fantasia/halloween.jpg" class="d-block w-100" alt="fantasia de ceifador">
-                                        <h5 class="mt-3">Ceifador</h5>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="./imagens/fantasia/halloween3.jpg" class="d-block w-100" alt="fantasia de fantasma">
-                                        <h5 class="mt-3">Fantasma</h5>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="./imagens/fantasia/halloween4.png" class="d-block w-100" alt="fantasia de bruxa">
-                                        <h5 class="mt-3">Bruxas</h5>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
+                                <div class="mb-2">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input class="form-control" type="email">
                                 </div>
-                            </div>
-                            <div class="tab-pane" id="conteudo-infantil">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="./imagens/fantasia/criança fantasia.jpg" class="d-block w-100" alt="criança fantasiada">
-                                        <h5 class="mt-3">Criativas</h5>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="./imagens/fantasia/heroi3.jpg" class="d-block w-100" alt="criança vestida de Goku">
-                                        <h5 class="mt-3">Anime</h5>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="./imagens/fantasia/heroi5.jpg" class="d-block w-100" alt="criança vestida de capitão america">
-                                        <h5 class="mt-3">Heroi</h5>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        </p>
-                                    </div>
+                                <div class="mb-2">
+                                    <label class="form-label" for="telefone">Telefone</label>
+                                    <input class="form-control" type="tel" id="phone" name="telefone" required>
                                 </div>
+                                <div class="mb-2">
+                                    <label class="form-label" for="mensagem">Sua mensagem</label>
+                                    <textarea class="form-control" name="mensagem" id="mensagem"></textarea>
+                                </div>
+                                <button class="btn btn-outline-primary" type="submit">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row redes-sociais">
+                                <h3 class="fs-4">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    Redes sociais
+                                </h3>
+                                <ul class="social-links">
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-facebook text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5 ms-1 me-1">
+                                        <a href="#">
+                                            <i class="bi bi-instagram text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-whatsapp text-colored"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="fs-4">
+                                    <i class="bi bi-cursor-fill"></i>
+                                    Endereço
+                                </h3>
+                                <p>
+                                    Rua Casa de Rosas, nº 158, Bairro Thermos - São Paulo, SP
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="contato" class="fundo-bolinha-roxa">
-            <div class="container pt-5 pb-5">
-                <div class="row">
-                    <h2 class="focus-title text-center mb-3">Contato</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-7">
-                        <form>
-                            <div class="mb-2">
-                                <label class="form-label" for="nome"> Nome</label>
-                                <input class="form-control" type="text" id="nome-contato" name="nome" required>
-                            </div>
-                            <div class="mb-2">
-                                <label class="form-label" for="email">Email</label>
-                                <input class="form-control" type="email">
-                            </div>
-                            <div class="mb-2">
-                                <label class="form-label" for="telefone">Telefone</label>
-                                <input class="form-control" type="tel" id="phone" name="telefone" required>
-                            </div>
-                            <div class="mb-2">
-                                <label class="form-label" for="mensagem">Sua mensagem</label>
-                                <textarea class="form-control" name="mensagem" id="mensagem"></textarea>
-                            </div>
-                            <button class="btn btn-outline-primary" type="submit">Enviar</button>
-                        </form>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="row">
-                            <h3 class="fs-4 text-colored">
-                                <i class="bi bi-hand-thumbs-up-fill"></i>
-                                Redes sociais
-                            </h3>
-                            <ul class="social-links">
-                                <li class="fs-5">
-                                    <a href="#">
-                                        <i class="bi bi-facebook text-colored"></i>
-                                    </a>
-                                </li>
-                                <li class="fs-5 ms-1 me-1">
-                                    <a href="#">
-                                        <i class="bi bi-instagram text-colored"></i>
-                                    </a>
-                                </li>
-                                <li class="fs-5">
-                                    <a href="#">
-                                        <i class="bi bi-whatsapp text-colored"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="row mt-4">
-                            <h3 class="fs-4 text-colored">
-                                <i class="bi bi-cursor-fill"></i>
-                                Endereço
-                            </h3>
-                            <p>
-                                Rua Casa de Rosas, nº 158, Bairro Thermos - São Paulo, SP
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
+    
 
 
 

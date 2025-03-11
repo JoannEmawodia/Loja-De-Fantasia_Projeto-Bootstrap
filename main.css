@@ -31,3 +31,22 @@ body{
 #produtos img {
     height: 250px;
 }
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px){
+    .carousel-item img {
+        height: 280px;
+    }
+
+    .redes-sociais{
+        padding-top: 30px;
+    }
+}
